@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Panel de Control</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div class="container dashboard-container">
+    <h1>Panel de Control</h1>
+    <p>Bienvenido, <strong><%= usuario %></strong></p>
+    <a href="/logout" class="btn-logout">Cerrar Sesión</a>
+
+    <hr>
+
+    <h2>Registrar Datos</h2>
+    <!-- Día, mes, año => convertimos a YYYY-MM-DD en el servidor -->
+    <form action="/registrar" method="POST" class="form-registro">
+      <label>Día:</label>
+      <input type="number" name="dia" placeholder="Ej: 24" required>
+      <label>Mes:</label>
+      <input type="number" name="mes" placeholder="Ej: 03" required>
+      <label>Año:</label>
+      <input type="number" name="anio" placeholder="Ej: 2025" required>
+
+      <label>Unidad:</label>
+      <input type="text" name="unidad" required>
+
+      <label>Número de Tráfico:</label>
+      <input type="text" name="numero_trafico" required>
+
+      <label>Producto:</label>
+      <input type="text" name="producto" required>
+
+      <label>Volumen:</label>
+      <input type="number" step="0.01" name="volumen" required>
+
+      <label>Importe:</label>
+      <input type="number" step="0.01" name="importe" required>
+
+      <button type="submit">Registrar</button>
+    </form>
+
+    <hr>
+
+    <h2>Registros</h2>
+    <table class="registros-table">
+      <thead>
+        <tr>
+          <th>Fecha</th>
+          <th>Unidad</th>
+          <th>N° Tráfico</th>
+          <th>Producto</th>
+          <th>Volumen</th>
+          <th>Importe</th>
+          <th>Acción</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% datos.forEach(dato => { %>
+          <tr>
+            <td><%= dato.fecha %></td>
+            <td><%= dato.unidad %></td>
+            <td><%= dato.numero_trafico %></td>
+            <td><%= dato.producto %></td>
+            <td><%= dato.volumen %></td>
+            <td><%= dato.importe %></td>
+            <td>
+              <form action="/borrar/<%= dato.id %>" method="POST">
+                <button type="submit" class="btn-borrar">Eliminar</button>
+              </form>
+            </td>
+          </tr>
+        <% }) %>
+      </tbody>
+    </table>
+
+    <hr>
+
+    <h2>Descargar Registros (JSON)</h2>
+    <p>Rango de fechas (formato YYYY-MM-DD):</p>
+    <form action="/descargar" method="GET" class="form-descargar">
+      <label>Desde:</label>
+      <input type="date" name="desde" required>
+      <label>Hasta:</label>
+      <input type="date" name="hasta" required>
+      <button type="submit">Descargar JSON</button>
+    </form>
+  </div>
+</body>
+</html>

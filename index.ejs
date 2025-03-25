@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <h1>Control Volumétrico</h1>
+    <a href="/registro" class="btn">Registrar Datos</a>
+    <a href="/dashboard" class="btn">Ver Registros</a>
+
+    <h2>Descargar Datos</h2>
+    <form action="/descargar" method="GET">
+        <label>Día:</label>
+        <input type="number" name="dia" min="1" max="31">
+        
+        <label>Mes:</label>
+        <input type="number" name="mes" min="1" max="12">
+        
+        <label>Año:</label>
+        <input type="number" name="anio">
+
+        <button type="submit">Descargar JSON</button>
+    </form>
+</body>
+</html>

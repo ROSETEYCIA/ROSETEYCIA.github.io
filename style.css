@@ -1,0 +1,99 @@
+/* Estilo general */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  text-align: center;
+}
+
+/* Contenedor general */
+.container {
+  max-width: 800px;
+  margin: 50px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px #ccc;
+}
+
+/* Login container */
+.login-container {
+  max-width: 400px;
+  margin: 100px auto;
+  background: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px #ccc;
+}
+
+/* Encabezados */
+h1, h2 {
+  margin-top: 0;
+}
+
+/* Botones */
+button {
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  margin-top: 10px;
+  padding: 10px;
+  width: 100%;
+  border-radius: 5px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Inputs */
+input {
+  display: block;
+  width: 95%;
+  margin: 10px auto;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+/* Mensajes de error */
+.error {
+  color: red;
+}
+
+/* Tabla de registros */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+table th, table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+table th {
+  background-color: #007BFF;
+  color: #fff;
+}
+
+/* Formularios en el dashboard */
+.form-registro, .form-descargar {
+  text-align: left;
+  margin: 20px auto;
+  max-width: 400px;
+}
+
+/* Botón logout */
+.btn-logout {
+  display: inline-block;
+  background-color: #dc3545;
+  color: #fff;
+  padding: 8px 15px;
+  border-radius: 5px;
+  margin-top: 10px;
+  text-decoration: none;
+}
+.btn-logout:hover {
+  background-color: #c82333;
+}

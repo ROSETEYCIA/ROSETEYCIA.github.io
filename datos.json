@@ -1,101 +1,26 @@
 [
   {
-    "dia": "24",
-    "mes": "03",
+    "mes": "MARZO",
     "año": "2025",
-    "unidad": "0470",
-    "numeroTrafico": "69-70",
-    "volumen": "1",
-    "importe": "1"
+    "volumen": "60000",
+    "importe": "1000000"
   },
   {
-    "dia": "24",
-    "mes": "03",
+    "dia": "15",
+    "mes": "MARZO",
     "año": "2025",
+    "volumen": "60000",
+    "importe": "1200000",
+    "unidad": "2434",
+    "numeroTrafico": "941-946"
+  },
+  {
+    "dia": "15",
+    "mes": "MARZO",
+    "año": "2025",
+    "volumen": "65000",
+    "importe": "62000",
     "unidad": "0670",
-    "numeroTrafico": "45-46",
-    "volumen": "5",
-    "importe": "5"
-  },
-  {
-    "dia": "24",
-    "mes": "03",
-    "año": "2025",
-    "unidad": "1788",
-    "numeroTrafico": "2-3",
-    "volumen": "2",
-    "importe": "2"
-  },
-  {
-    "dia": "24",
-    "mes": "03",
-    "año": "2025",
-    "unidad": "3873",
-    "numeroTrafico": "1-71",
-    "volumen": "25",
-    "importe": "25"
-  },
-  {
-    "dia": "23",
-    "mes": "03",
-    "año": "2025",
-    "unidad": "2846",
-    "numeroTrafico": "0-1",
-    "volumen": "1",
-    "importe": "1"
-  },
-  {
-    "dia": "20",
-    "mes": "03",
-    "año": "2025",
-    "unidad": "1879",
-    "numeroTrafico": "1-1",
-    "volumen": "25",
-    "importe": "25"
-  },
-  {
-    "dia": "20",
-    "mes": "03",
-    "año": "2025",
-    "unidad": "2430",
-    "numeroTrafico": "1-2",
-    "volumen": "25",
-    "importe": "25"
-  },
-  {
-    "dia": "11",
-    "mes": "03",
-    "año": "2025",
-    "unidad": "0470",
-    "numeroTrafico": "25",
-    "volumen": "25",
-    "importe": "25"
-  },
-  {
-    "dia": "11",
-    "mes": "03",
-    "año": "2025",
-    "unidad": "2611",
-    "numeroTrafico": "23-23",
-    "volumen": "25",
-    "importe": "25"
-  },
-  {
-    "dia": "11",
-    "mes": "03",
-    "año": "2025",
-    "unidad": "0470",
-    "numeroTrafico": "2525",
-    "volumen": "25",
-    "importe": "25"
-  },
-  {
-    "dia": "11",
-    "mes": "03",
-    "año": "20285",
-    "unidad": "0470",
-    "numeroTrafico": "0",
-    "volumen": "0",
-    "importe": "0"
+    "numeroTrafico": "985-981"
   }
 ]
